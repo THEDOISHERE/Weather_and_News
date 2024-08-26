@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <hr />
+    <header></header>
+    <nav>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Weather</a></li>
+        <li style="float: right"><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <main>
+      <section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city">Tooele</h3>
+                  <p>Currently: <span id="current-desc">Mostly Coudy</span></p>
+                  <p>
+                    Tempature:
+                    <span id="current-temp"></span> °F
+                  </p>
+                  <p>Real Feel: <span id="current-feelsLike"></span> °F</p>
+                  <p>Humidity: <span id="current-humid"></span>%</p>
+                  <p>Wind Speed: <span id="current-windSpeed"></span> mph</p>
+                  <p>Wind Chill: <span id="current-windChill"></span> °F</p>
+                </div>
+              </section>
+              <div>
+                <img
+                  id="icon"
+                  src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/partlyCloudy.jpg?raw=true"
+                  alt="Random Image"
+                  width="400"
+                  height="400"
+                />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city">Tooele</h3>
+                <div class="flex">
+                  <div class="flex-col">
+                    <span id="dayTitle1" class="col-head"></span>
+                    <img id="weatherIcon1" class="weatherIcon" />
+                    <span class="temp-data">
+                      <span id="data1">Day 1</span>
+                      <span>85°F</span>
+                      <img
+                        src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/partlyCloudy.jpg?raw=true"
+                        alt="Random Image"
+                        width="100"
+                        height="100"
+                      />
+                    </span>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle2" class="col-head"></span>
+                    <img id="weatherIcon2" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data2">Day 2</span>
+                      <span>91°F</span>
+                      <img
+                        src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/Sunny.jpg?raw=true"
+                        alt="Random Image"
+                        width="100"
+                        height="100"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle3" class="col-head"></span>
+                    <img id="weatherIcon3" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data3">Day 3</span>
+                      <span>93°F</span>
+                      <img
+                        src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/Sunny.jpg?raw=true"
+                        alt="Random Image"
+                        width="100"
+                        height="100"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle4" class="col-head"></span>
+                    <img id="weatherIcon4" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data4">Day 4</span>
+                      <span>92°F</span>
+                      <img
+                        src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/partlyCloudy.jpg?raw=true"
+                        alt="Random Image"
+                        width="100"
+                        height="100"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle5" class="col-head"></span>
+                    <img id="weatherIcon5" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data5">Day 5</span>
+                      <span>89°F</span>
+                      <img
+                        src="https://github.com/AndrewP-Instructor/HTMLProject1/blob/main/images/partlyCloudy.jpg?raw=true"
+                        alt="Random Image"
+                        width="100"
+                        height="100"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="news-section">
+        <div class="page">
+          <h1>LATEST NEWS</h1>
+          <div class="archive">
+            <article class="article">
+              <img
+                id="header-img"
+                src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg"
+                alt="spring"
+                height="400"
+              />
+              <h2>
+                <a id="header-article"></a>
+              </h2>
+              <p id="header-desc">Fall is almost here!</p>
+            </article>
+
+            <article class="article">
+              <img
+                id="article-img-1"
+                src="https://www.shutterstock.com/image-photo/playful-tabby-white-cat-running-600nw-2013748748.jpg"
+                alt="Cat running"
+              />
+              <h3>
+                <a id="article-link-1">Fastest car alive.</a>
+              </h3>
+              <p id="article-desc-1">
+                This cat has been recently breaking cat speed records.
+              </p>
+            </article>
+
+            <article class="article">
+              <img
+                id="article-img-1"
+                src="https://unknownworlds.com/_next/image?url=https%3A%2F%2Fd17c72h1ypygg7.cloudfront.net%2Fsn2_community_questions_blog_1536x864_ef32a4a56a.jpg&w=3840&q=75"
+                alt="Subnautica 2 image"
+                width="400px"
+              />
+              <h3>
+                <a id="article-link-1">Subnautica 2 leaks</a>
+              </h3>
+              <p id="article-desc-1">
+                Subnautica 2 has been confirmed in development by Unknown
+                Worlds.
+              </p>
+            </article>
+
+            <article class="article">
+              <img
+                id="article-img-1"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/1200px-FullMoon2010.jpg"
+                alt="The moon"
+                width="600"
+              />
+              <h3>
+                <a id="article-link-1">Sudden explosion on the moon</a>
+              </h3>
+              <p id="article-desc-1">
+                At 12:47pm, there was an explosion on the moon, no one knows
+                what caused it.
+              </p>
+            </article>
+
+            <article class="article">
+              <img
+                id="article-img-1"
+                src="https://static.wikia.nocookie.net/unofficialscpwikibyndyt/images/b/b9/SCP-173.jpg"
+                alt="main article"
+                width="600"
+              />
+              <h3>
+                <a id="article-link-1">A creature on the loose</a>
+              </h3>
+              <p id="article-desc-1">
+                At 6:23pm, an unknown organization has been sending out warnings
+                about a dangerous creature roaming the streets.
+              </p>
+            </article>
+
+            <article class="article">
+              <img
+                id="article-img-1"
+                src="https://static.wikia.nocookie.net/villains/images/d/d5/Sun2.jpg"
+                alt="main article"
+                width="640"
+              />
+              <h3>
+                <a id="article-link-1">The sun turned red</a>
+              </h3>
+              <p id="article-desc-1">
+                Stay inside at all costs...- Come outside, it is safe.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr />
+      &copy; <span id="year"></span> | Mason Moore |
+      <a
+        href="https://tooeletech.edu/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Tooele Technical College</a
+      >
+      <br />
+      last updated: <span id="updated">8/20/2024</span>
+    </footer>
+
+    <script src="weather-header.js"></script>
+  </body>
+</html>
